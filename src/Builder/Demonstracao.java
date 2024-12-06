@@ -8,14 +8,14 @@ public class Demonstracao {
         // Criando Morcego de Fogo
         diretor.construirMorcegoFogo(builder);
         Morcego morcegoFogo = builder.build();
-        morcegoFogo.exibirInfo();
-        morcegoFogo.atacar();
 
         // Criando Morcego de Gelo
         diretor.construirMorcegoGelo(builder);
         Morcego morcegoGelo = builder.build();
-        morcegoGelo.exibirInfo();
-        morcegoGelo.atacar();
+		
+		BatalhaMorcegos batalha_morcegaços = new BatalhaMorcegos(morcegoFogo, morcegoGelo);
+		batalha_morcegaços.iniciarBatalha();
+
     }
 }
 
